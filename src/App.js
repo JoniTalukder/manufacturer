@@ -14,7 +14,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="purchase" element={
+        <Route path="purchase/:_id" element={
           <RequireAuth>
             <Purchase />
           </RequireAuth>

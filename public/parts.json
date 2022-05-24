@@ -1,0 +1,50 @@
+[
+    {
+      "img": "https://sc04.alicdn.com/kf/H34c1103e2d2a4254a4cb286bc002bd7cp.jpg",
+      "name": "Aluminum Alloy",
+      "description": "Customized Metal Vehicle Auto Parts Aluminum Alloy Stamping Die Tooling casting for Vehicle stamping part",
+      "min_qty": 100,
+      "available_qty": 1000,
+      "price": 10
+    },
+    {
+      "img": "https://sc04.alicdn.com/kf/Hf1a6709576714af2b6566dccd4a706a3u.jpg",
+      "name": "Sheet Metal Fabrication Parts",
+      "description": "Professional Manufacturer Vehicle Parts Car Motor Spare Parts Sheet Metal Fabrication Parts",
+      "min_qty": 200,
+      "available_qty": 1000,
+      "price": 20
+    },
+    {
+      "img": "https://sc04.alicdn.com/kf/Hc12933ae80b3433ebc67aac55dbbb37ci.jpeg",
+      "name": "High Precision Material Brass Electric",
+      "description": "Custom High Precision Material Brass Electric Vehicle Engine Parts Process CNC Machining",
+      "min_qty": 500,
+      "available_qty": 2000,
+      "price": 15
+    },
+    {
+      "img": "https://sc04.alicdn.com/kf/H19f1d153ac2440d7bced3e030f00971bN.jpg",
+      "name": "Titanium Bolts Hexagonal Hole",
+      "description": "Professional Manufacturer Vehicle Parts Car Motor Spare Parts Sheet Metal Fabrication Parts",
+      "min_qty": 300,
+      "available_qty": 5000,
+      "price": 10
+    },
+    {
+      "img": "https://sc04.alicdn.com/kf/Hf3363bd862d14689bf4253a4144a0669e.jpg",
+      "name": "aluminum 6061 CNC machining parts",
+      "description": "Professional custom aluminum 6061 CNC machining parts manufacturing for unmanned vehicles accessories",
+      "min_qty": 500,
+      "available_qty": 5000,
+      "price": 30
+    },
+    {
+      "img": "https://sc04.alicdn.com/kf/HTB15eYXMXXXXXXMXXXXq6xXFXXXV.jpg",
+      "name": "aluminium processing G10",
+      "description": "CNC custom machining parts anodized aluminium processing G10 material cnc machining part",
+      "min_qty": 100,
+      "available_qty": 2000,
+      "price": 12
+    }
+  ]
