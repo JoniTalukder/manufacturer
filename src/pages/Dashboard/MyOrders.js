@@ -8,7 +8,12 @@ const MyOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/purchase?email=${user.email}`)
+            fetch(`http://localhost:5000/purchase?email=${user.email}`, {
+                method: 'GET',
+                headers: {
+                    'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+                }
+            })
                 .then(res => res.json())
                 .then(data => setPurchase(data));
         }
@@ -17,9 +22,9 @@ const MyOrders = () => {
     return (
         <div>
             <h2>Orders Page:{purchase.length}</h2>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
-                    
+            <div className="overflow-x-auto">
+                <table className="table w-full">
+
                     <thead>
                         <tr>
                             <th></th>
@@ -31,18 +36,18 @@ const MyOrders = () => {
                     </thead>
                     <tbody>
                         {
-                            purchase.map((part,index)=><tr>
-                                <th>{index+1}</th>
+                            purchase.map((part, index) => <tr>
+                                <th>{index + 1}</th>
                                 <td>{part.userName}</td>
                                 <td>{part.part}</td>
                                 <td>{part.minQty}</td>
                                 <td>{part.price}</td>
-                                
+
                             </tr>)
-                       }
-                        
-                        
-                       
+                        }
+
+
+
                     </tbody>
                 </table>
             </div>
