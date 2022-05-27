@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './pages/Shared/Navbar';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Blogs from './pages/Blogs/Blogs';
@@ -30,7 +30,7 @@ function App() {
           <RequireAuth><Dashboard /></RequireAuth>
         }>
           <Route index element={<MyOrders></MyOrders>}></Route>
-          <Route path='review' element={<Review></Review>}></Route>
+          <Route path='review' element={<RequireAdmin><Review></Review></RequireAdmin>}></Route>
           <Route path='users' element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
         </Route>
         <Route path="blogs" element={<Blogs />} />

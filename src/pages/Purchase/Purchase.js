@@ -15,30 +15,30 @@ const Purchase = () => {
             .then(data => setPart(data));
     }, []);
 
-    const handleUpdatePart = event => {
-        event.preventDefault();
-        const name = event.target.name.value;
-        const min_qty = event.target.min_qty.value;
-        const available_qty = event.target.available_qty.value;
+    // const handleUpdatePart = event => {
+    //     event.preventDefault();
+    //     const name = event.target.name.value;
+    //     const min_qty = event.target.min_qty.value;
+    //     const available_qty = event.target.available_qty.value;
 
-        const updatedPart = { name, min_qty, available_qty };
+    //     const updatedPart = { name, min_qty, available_qty };
 
-        // send data to the server
-        const url = `http://localhost:5000/parts/${_id}`;
-        fetch(url, {
-            method: 'PUT',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(updatedPart)
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log('success', data);
-                alert('Part Name Updated successfully!!!');
-                event.target.reset();
-            })
-    }
+    //     // send data to the server
+    //     const url = `http://localhost:5000/parts/${_id}`;
+    //     fetch(url, {
+    //         method: 'PUT',
+    //         headers: {
+    //             'content-type': 'application/json'
+    //         },
+    //         body: JSON.stringify(updatedPart)
+    //     })
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             console.log('success', data);
+    //             alert('Part Name Updated successfully!!!');
+    //             event.target.reset();
+    //         })
+    // }
 
     const handlePurchase = event => {
         event.preventDefault();
@@ -90,25 +90,16 @@ const Purchase = () => {
             </div>
 
             <div>
-                <form onSubmit={handleUpdatePart} className='grid grid-cols-1 gap-5 justify-items-center mt-5'>
+                {/* <form onSubmit={handleUpdatePart} className='grid grid-cols-1 gap-5 justify-items-center mt-5'>
                     <input type="text" name="name" value={user?.displayName || ''} disabled className="input input-bordered w-full max-w-xs" />
                     <input type="text" name="email" value={user?.email || ''} disabled className="input input-bordered w-full max-w-xs" />
                     <input type="text" name="name" placeholder='Name' required className="input input-bordered w-full max-w-xs" />
                     <input type="number" name="min_qty" placeholder='Min Qty' required className="input input-bordered w-full max-w-xs" />
                     <input type="number" name="available_qty" placeholder='Available Qty' required className="input input-bordered w-full max-w-xs" />
 
-                    <input disabled={part.min_qty === 10} type="submit" value="Update" className="btn btn-primary input input-bordered w-full max-w-xs" />
-                </form>
-
-                {/* <form className='grid grid-cols-1 gap-5 justify-items-center mt-5'>
-                    <input type="text" name="name" className="input input-bordered w-full max-w-xs" />
-                    <input type="email" name="email" placeholder="Type Email" className="input input-bordered w-full max-w-xs" />
-                    <input type="text" name="phone" placeholder="Type Phone" className="input input-bordered w-full max-w-xs" />
-                    <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
-                    <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
-                    <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
                     <input type="submit" value="Update" className="btn btn-primary input input-bordered w-full max-w-xs" />
                 </form> */}
+
             </div>
         </div>
     );
