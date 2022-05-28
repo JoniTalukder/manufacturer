@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### `Project Name: Manufacturer Co.`
 
-### `Project Link: https://github.com/programming-hero-web-course1/manufacturer-website-client-side-JoniTalukder`
+### `Project Link: https://manufacturer-company-a49c4.web.app/`
 
 ### `Git Link: https://github.com/programming-hero-web-course1/manufacturer-website-client-side-JoniTalukder`
 

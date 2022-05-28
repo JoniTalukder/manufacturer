@@ -5,11 +5,11 @@ const Parts = () => {
     const [parts, setParts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/parts')
+        fetch('https://aqueous-journey-20834.herokuapp.com/parts')
             .then(res => res.json())
             .then(data => setParts(data));
     }, [])
-    
+
     return (
         <div className='my-24'>
             <h2 className='text-4xl text-center uppercase font-bold text-primary'>Vehicle Parts</h2>

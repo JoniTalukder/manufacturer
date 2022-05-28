@@ -9,7 +9,7 @@ const Purchase = () => {
     const [user, loading, error] = useAuthState(auth);
     const [part, setPart] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/parts/${_id}`;
+        const url = `https://aqueous-journey-20834.herokuapp.com/parts/${_id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setPart(data));
@@ -24,7 +24,7 @@ const Purchase = () => {
     //     const updatedPart = { name, min_qty, available_qty };
 
     //     // send data to the server
-    //     const url = `http://localhost:5000/parts/${_id}`;
+    //     const url = `https://aqueous-journey-20834.herokuapp.com/parts/${_id}`;
     //     fetch(url, {
     //         method: 'PUT',
     //         headers: {
@@ -52,7 +52,7 @@ const Purchase = () => {
             availableQty: part.available_qty,
             price: part.price
         }
-        fetch('http://localhost:5000/purchase', {
+        fetch('https://aqueous-journey-20834.herokuapp.com/purchase', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

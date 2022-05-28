@@ -8,7 +8,7 @@ const Review = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/review`;
+        const url = `https://aqueous-journey-20834.herokuapp.com/review`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -16,11 +16,11 @@ const Review = () => {
             },
             body: JSON.stringify(data)
         })
-        .then(res=> res.json())
-        .then(result =>{
-            console.log(result);
-            
-        } )
+            .then(res => res.json())
+            .then(result => {
+                console.log(result);
+
+            })
     };
     return (
         <div>
@@ -32,7 +32,7 @@ const Review = () => {
 
                 <textarea className='mb-2' placeholder='Description' {...register("description")} />
 
-                
+
                 <input type="submit" value="Add Review" />
             </form>
         </div>
