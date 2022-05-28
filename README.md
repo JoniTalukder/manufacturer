@@ -10,12 +10,14 @@ In the project directory, you can run:
 
 ### `Project Link: https://github.com/programming-hero-web-course1/manufacturer-website-client-side-JoniTalukder`
 
+### `Git Link: https://github.com/programming-hero-web-course1/manufacturer-website-client-side-JoniTalukder`
+
+### `Server Link: https://github.com/programming-hero-web-course1/manufacturer-website-server-side-JoniTalukder`
+
 ### `Technology Used`
-  - - React Hook
-  - - React Form
+  - - react hook form
+  - - react query
+  - - Node Js
+  - - daisyui.com
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
