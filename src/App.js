@@ -16,6 +16,7 @@ import Users from './pages/Dashboard/Users';
 import RequireAdmin from './pages/Login/RequireAdmin';
 import Payment from './pages/Dashboard/Payment';
 import MyPortfolio from './pages/Dashboard/MyPortfolio';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
 
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <ToastContainer />
     </div>
