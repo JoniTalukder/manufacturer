@@ -3,9 +3,9 @@
       "img": "https://sc04.alicdn.com/kf/H34c1103e2d2a4254a4cb286bc002bd7cp.jpg",
       "name": "Aluminum Alloy",
       "description": "Customized Metal Vehicle Auto Parts Aluminum Alloy Stamping Die Tooling casting for Vehicle stamping part",
-      "min_qty": 100,
-      "available_qty": 1000,
-      "price": 10
+      "price": 100,
+      "supplier": 1000,
+      "qty": 10
     },
     {
       "img": "https://sc04.alicdn.com/kf/Hf1a6709576714af2b6566dccd4a706a3u.jpg",
